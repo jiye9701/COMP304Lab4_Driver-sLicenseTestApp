@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#90CFCE"
+    tools:context=".ViewTestInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="162dp">
+
+        <TextView
+            android:id="@+id/lbl_view_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="View Test list"
+            android:layout_marginBottom="15dp"
+            android:textStyle="bold"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:text="Applicant Id:"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spnr_test_applicants"
+                android:layout_width="150dp"
+                android:layout_height="40dp">
+
+            </Spinner>
+
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Search" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lst_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Test Id"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Test Result"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Test Date"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Test Rout"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lst_tests"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!--        <TableLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+
+<!--            <TableRow>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="61dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="#377187"-->
+<!--                    android:text="Test Id"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="95dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="#377187"-->
+<!--                    android:text="Examiner Id"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="96dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="#377187"-->
+<!--                    android:text="Test Result"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="89dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="#377187"-->
+<!--                    android:text="Test Date"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="72dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="#377187"-->
+<!--                    android:text="Test Rout"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--            </TableRow>-->
+
+
+<!--            <TableRow>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/txt_test_id"-->
+<!--                    android:layout_width="61dp"-->
+<!--                    android:layout_height="500dp"-->
+<!--                    android:background="#77B5B3" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/txt_test_examiner_id"-->
+<!--                    android:layout_width="95dp"-->
+<!--                    android:layout_height="500dp"-->
+<!--                    android:background="#77B5B3" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/txt_test_result"-->
+<!--                    android:layout_width="96dp"-->
+<!--                    android:layout_height="500dp"-->
+<!--                    android:background="#77B5B3" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/txt_test_date"-->
+<!--                    android:layout_width="89dp"-->
+<!--                    android:layout_height="500dp"-->
+<!--                    android:background="#77B5B3" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/txt_test_rout"-->
+<!--                    android:layout_width="72dp"-->
+<!--                    android:layout_height="500dp"-->
+<!--                    android:background="#77B5B3" />-->
+
+<!--            </TableRow>-->
+<!--        </TableLayout>-->
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
